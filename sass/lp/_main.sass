@@ -1,0 +1,1294 @@
+.site-hero
+  position: relative
+  background: #022E4C image-set(url(../img/hero.jpg) 1x, url(../img/hero@2x.jpg) 2x) 50% 0 no-repeat
+  background-size: cover
+  overflow: hidden
+  &__inner
+    position: relative
+    z-index: 2
+    min-height: 1252px
+    padding: 20px 0 0
+  .sticker
+    position: absolute
+    z-index: 9
+    right: -15px
+    bottom: 111px
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 163px
+    height: 122px
+    border-radius: 122px 0 0 122px
+    box-shadow: 0 3px 6px rgba(#000, .16)
+    background-color: $accent
+    color: #fff
+    font-weight: 800
+    font-size: 43px
+    line-height: 0.93em
+    text-align: right
+    text-decoration: none
+    transition: right .3s
+    &:hover
+      right: 0
+  @media (max-width: 767px)
+    background: #022E4C
+    &__inner
+      min-height: 0
+      padding: 0
+    .container
+      max-width: 100%
+      padding: 0
+    .sticker
+      justify-content: flex-start
+      right: -25px
+      top: 300px
+      bottom: auto
+      width: 115px
+      height: 70px
+      padding-left: 23px
+      border-radius: 100px 0 0 100px
+      font-size: 25px
+
+// Site Banner
+.site-banner
+  margin: -25px auto 32px
+  h1
+    margin: 0
+    img
+      margin: 0 auto
+  @media (max-width: 991px)
+    margin-top: -20px
+  @media (max-width: 767px)
+    min-height: 387px
+    margin: 0
+    padding: 5px 5px 0
+    background: image-set(url(../img/hero-m.jpg) 1x, url(../img/hero-m@2x.jpg) 2x) 50% no-repeat
+    background-size: cover
+    h1
+      margin-bottom: 14px
+      img
+        max-width: 365px
+    .primary-btn
+      max-width: 190px
+      height: 45px
+      margin: 0 auto
+
+// Offer Box
+.offer-box
+  position: relative
+  width: 550px
+  margin: 0 auto
+  text-align: center
+  &__inner
+    border: 2px solid $color_a
+    border-radius: 10px
+    background-color: rgba(#fff, .89)
+  &__header
+    .title
+      padding: 21px 15px 16px
+      h1
+        margin: 0
+        color: #092D43
+        font-weight: 400
+        font-size: 40px
+        line-height: 1.075em
+        strong
+          font-weight: 500
+  &__topBar
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 8px
+    background-color: $color_a
+    padding: 11px
+    color: #092D43
+    font-weight: 500
+    font-style: italic
+    font-size: 22px
+  &__body
+    padding: 25px 35px 30px
+    text-align: center
+    .cta-btn
+      margin-bottom: 20px
+    .cta-note
+      margin: 0 -35px 10px
+      padding: 9px
+      background-color: #fffcaf
+      color: #092D43
+      font-weight: 500
+      font-style: italic
+      font-size: 14px
+      line-height: 1.353em
+      &__wrap
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 6px
+      .ico
+        margin-top: -4px
+      a
+        color: #0261b8
+        &:hover
+          color: $accent_hover
+    .cta-note-2
+      margin-bottom: -10px
+      color: #092d43
+      font-weight: 400
+      font-size: 11px
+      line-height: 1.2em
+      text-transform: capitalize
+  &__desc
+    margin-bottom: 25px
+    p
+      margin: 0
+      color: #092d43
+      font-weight: 500
+      font-size: 20px
+      line-height: 1.350em
+  &__includes
+    margin-bottom: 20px
+    ul
+      width: fit-content
+      margin: 0 auto
+      padding: 0
+      list-style: none
+      li
+        margin-bottom: 7px
+        color: #092D43
+        font-weight: 500
+        font-size: 19px
+        line-height: 1.4em
+        text-align: left
+        &:last-child
+          margin-bottom: 0
+        a
+          color: #0073B9
+          &:hover
+            color: $accent_hover
+        .bullet
+          display: inline-block
+          width: 25px
+          height: 25px
+          margin-right: 5px
+          border-radius: 25px
+          background: #092D43
+          color: #fff
+          text-align: center
+  &__price
+    &--wrap
+      display: flex
+      align-items: center
+      justify-content: center
+      gap: 14px
+      margin-bottom: 15px
+      color: #092D43
+      .left, .right
+        width: 80px
+      .left
+        text-align: right
+      .right
+        text-align: left
+    .retail-price
+      margin-bottom: 2px
+      font-weight: 400
+      font-size: 20px
+      line-height: 1.1em
+    .from
+      width: 60px
+      font-weight: 400
+      font-size: 18px
+      line-height: 1em
+      text-align: right
+      text-transform: uppercase
+    .unit-price
+      font-weight: 400
+      font-size: 18px
+      line-height: 1em
+      text-transform: uppercase
+    .offer-price
+      font-weight: 700
+      font-size: 54px
+      line-height: 1em
+      sup
+        &.currency
+          font-size: 60%
+        &.asterisk
+          top: -1.2em
+          font-size: 37%
+          font-weight: 400
+  &__footer
+    padding: 0 5px 5px
+    .video
+      transition: transform .2s
+      &:hover
+        transform: scale(1.02)
+      img
+        margin: 0 auto
+        border-radius: 5px
+        box-shadow: inset 0 0 0 3px $accent
+        &:hover
+          //
+  .cta-btn
+    max-width: 350px
+    margin: 0 auto 15px
+  @media (max-width: 991px)
+    margin: 15px auto
+  @media (max-width: 767px)
+    width: 100%
+    max-width: 400px
+    margin: 0 auto
+    padding: 0 10px
+    &__header
+      .title
+        padding: 17px 15px
+        h1
+          font-size: 31px
+          letter-spacing: -0.8px
+    &__topBar
+      gap: 5px
+      padding: 11px 5px
+      font-size: 16px
+      line-height: 1.2em
+      img
+        width: 12px
+    &__body
+      padding: 25px 15px
+      .cta-note
+        margin: 0 -15px 10px
+        &__wrap
+          align-items: flex-start
+          gap: 10px
+          max-width: 270px
+          margin: 0 auto
+          line-height: 1.1em
+        .ico
+          padding-top: 3px
+        .txt
+          text-align: left
+      .cta-note-2
+        max-width: 250px
+        margin-left: auto
+        margin-right: auto
+    &__includes
+      margin-bottom: 15px
+      ul
+        li
+          margin-bottom: 10px
+          font-size: 16px
+          .bullet
+            width: 23px
+            height: 23px
+            font-size: 15px
+          .princess-logo
+            width: 116px
+    &__price
+      .retail-price
+        padding-top: 5px
+        font-size: 18px
+      .offer-price
+        font-size: 50px
+        letter-spacing: -1.25px
+      .unit-price
+        padding-top: 5px
+        font-size: 16px
+
+// Offer About
+.offer-about
+  position: relative
+  padding-top: 1px
+  color: #fff
+  text-align: center
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    display: block
+    width: 100%
+    height: 672px
+    background-color: #092D43
+  &.about-2
+    padding-top: 60px
+    &:before
+      height: 970px
+  &__header
+    position: relative
+    margin-bottom: 33px
+    &--logo
+      margin-top: -27px
+      margin-bottom: 20px
+      img
+        width: 182px
+    h2
+      margin: 0 auto 5px
+      font-family: $font_b
+      font-style: italic
+      font-size: 92px
+      line-height: 1em
+    h3
+      // max-width: 340px
+      margin: 0 auto 6px
+      font-weight: 500
+      font-size: 24px
+      line-height: 1.350em
+      text-transform: uppercase
+    .curved-line
+      margin: 0 auto
+  &__body
+    margin-bottom: 50px
+    p
+      margin: 0 auto
+      font-weight: 400
+      font-size: 17px
+      line-height: 1.471em
+  &__footer
+    .video-box
+      position: relative
+      width: fit-content
+      margin: 0 auto
+      transition: box-shadow .2s, transform .3s
+      &:hover
+        box-shadow: 0 5px 15px rgba(#000, .4)
+        transform: scale(1.04)
+      .video-preview
+        border-radius: 10px
+      .play-btn
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+  &__btn
+    margin-bottom: 40px
+    .primary-btn
+      max-width: 312px
+      height: 46px
+      margin: 0 auto
+      border: 0
+  @media (max-width: 991px)
+    &.about-2
+      &:before
+        height: 1420px
+    &__body
+      p
+        font-size: 17px
+  @media (max-width: 767px)
+    &:before
+      bottom: 0
+      height: 100%
+    &.about-2
+      padding: 50px 0 0
+    &__header
+      padding-top: 45px
+      &--logo
+        margin-top: 0
+      h2
+        margin-bottom: 14px
+        font-size: 60px
+      h3
+        max-width: 340px
+        font-size: 20px
+    &__body
+      max-width: 350px
+      margin: 0 auto 35px
+    &__footer
+      margin-right: calc(var(--bs-gutter-x) * -.5)
+      margin-left: calc(var(--bs-gutter-x) * -.5)
+      .video-box 
+        .video-preview
+          border-radius: 0
+
+// Offer Amenities Grid
+.offer-grid
+  padding-top: 55px
+  &.grid-2
+    padding-bottom: 80px
+  &__header
+    .title
+      margin-bottom: 40px
+      text-align: center
+      h2
+        margin: 0
+        color: #00407D
+        font-weight: 400
+        font-size: 40px
+        line-height: 1.1em
+  &__body
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 30px;
+  @media (max-width: 991px)
+    &.grid-2
+      padding-bottom: 40px
+    &__body
+      grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 767px)
+    padding-top: 40px
+    &.grid-2
+      padding-bottom: 40px
+    &__header
+      .title
+        margin-bottom: 30px
+        h2
+          font-size: 38px
+          line-height: 1.1em
+          img
+            margin-top: 10px
+    &__body
+      grid-template-columns: repeat(1, 1fr);
+      gap: 40px 0
+
+.amenity-box
+  &__media
+    height: 224px
+    margin-bottom: 30px
+    border-radius: 5px
+    background: #aaa 50% no-repeat
+    background-size: cover
+  &__text
+    h3
+      margin: 0 0 20px
+      color: #00407D
+      font-weight: 400
+      font-size: 24px
+      line-height: 1.1em
+      text-transform: uppercase
+    p
+      min-height: 75px
+      margin: 0 0 25px
+      color: #092D43
+      font-weight: 400
+      font-size: 17px
+      line-height: 1.471em
+      strong
+        font-weight: 500
+    .primary-btn
+      max-width: 217px
+      height: 38px
+      border: 0
+      box-shadow: none
+      font-size: 15px
+  @media (max-width: 991px)
+    &__text
+      p
+        min-height: 0
+        font-size: 16px
+  @media (max-width: 767px)
+    padding: 0 5px
+
+// Cruise Itinerary
+.cruise-itinerary
+  padding-top: 70px
+  padding-bottom: 50px
+  h2
+    margin: 0 0 40px
+    color: #00407D
+    font-weight: 400
+    font-size: 40px
+    line-height: 1.1em
+    text-align: center
+  &__table
+    display: flex
+    margin-bottom: 20px
+    padding: 5px
+    border-radius: 10px
+    background: #fff
+    .header
+      display: flex
+      height: 70px
+      overflow: hidden
+      background-color: #092D43
+      color: #fff
+      &.header-1
+        border-radius: 7px 0 0 0
+      &.header-2
+        border-radius: 0 7px 0 0
+      .th
+        display: flex
+        align-items: center
+        width: 100%
+        padding: 15px 30px
+        border-left: 1px solid #6F8C9C
+        &.title-1
+          max-width: 133px
+          border-left: 0
+        h4
+          margin: 0
+          font-weight: 700
+          font-size: 21px
+          line-height: 1em
+    .body
+      .tr
+        display: flex
+        align-items: center
+        &.odd
+          background-color: #EFF1F3
+      .td
+        width: 100%
+        padding: 9px 0
+        &.cell-1
+          max-width: 133px
+        &.cell-2
+          padding: 10px 30px
+        .day-label
+          display: flex
+          align-items: center
+          width: 110px
+          height: 41px
+          padding-left: 30px
+          border-radius: 0 30px 30px 0
+          background-color: #AEF0F1
+          color: #071330
+          font-weight: 700
+          font-size: 18px
+          line-height: 1em
+        .destination
+          display: flex
+          align-items: center
+          gap: 16px
+          color: #071330
+          font-weight: 500
+          font-size: 18px
+          line-height: 1.1em
+  &__list
+    .body
+      padding-top: 5px
+      padding-right: 2px
+  &__map
+    .body
+      padding-left: 2px
+    .map
+      img
+        width: 100%
+        height: 359px
+        object-fit: cover
+  &__note
+    max-width: 590px
+    margin: 0 auto
+    font-weight: 400
+    font-size: 12px
+    line-height: 1.417em
+    text-align: center
+  @media (max-width: 991px)
+    &__table
+      flex-direction: column
+      max-width: 500px
+      margin: 0 auto 20px
+      padding-bottom: 0
+      .header
+        &.header-1
+          border-radius: 0
+        &.header-2
+          border-radius: 7px 7px 0 0
+    &__list
+      order: 2
+      .body
+        padding: 0
+    &__map
+      order: 1
+      .body
+        padding: 0
+      .map
+        img
+          height: 300px
+  @media (max-width: 767px)
+    padding-top: 50px
+    padding-bottom: 35px
+    h2
+      margin-bottom: 30px
+    &__map
+      .map
+        img
+          height: auto
+    &__table
+      .header 
+          .th
+            &.title-1
+              max-width: 110px
+      .body
+        .td
+          &.cell-1
+            max-width: 110px
+          &.cell-2
+            padding: 10px 15px
+          .day-label
+            width: 100px
+            padding-left: 15px
+          .destination
+            gap: 10px
+            font-size: 16px
+    &__note
+      font-size: 11px
+
+// Offer Banner
+.offer-banner
+  position: relative
+  z-index: 1
+  display: flex
+  margin-bottom: 60px
+  padding: 6px
+  border-radius: 10px
+  box-shadow: 0 3px 6px rgba(#000, .16)
+  background-color: #fff
+  &__pricing
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    width: 100%
+    max-width: 224px
+    border-radius: 5px
+    background: rgba(#AEF0F1, .41)
+    color: #092D43
+    .retail-price
+      margin-bottom: 5px
+      font-weight: 400
+      font-size: 20px
+      line-height: 1.1em
+    .from
+      font-weight: 400
+      font-size: 18px
+      line-height: 1.1em
+      text-transform: uppercase
+    .unit-price
+      font-weight: 400
+      font-size: 18px
+      line-height: 1em
+      text-transform: uppercase
+    .offer-price
+      margin-bottom: 10px
+      font-weight: 700
+      font-size: 54px
+      line-height: 1em
+      sup
+        &.currency
+          font-size: 60%
+        &.asterisk
+          top: -1.2em
+          font-weight: 400
+          font-size: 37%
+  &__content
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 20px
+    width: 100%
+    padding: 30px
+    text-align: left
+    .info
+      h3
+        margin: 0 0 20px
+        color: #00407D
+        font-weight: 500
+        font-size: 27px
+        line-height: 1.1em
+    .includes
+      ul
+        margin: 0
+        padding: 0
+        list-style: none
+        li
+          margin-bottom: 10px
+          color: #092D43
+          font-weight: 500
+          font-size: 19px
+          line-height: 1.4em
+          text-align: left
+          &:last-child
+            margin-bottom: 0
+          a
+            color: #0073B9
+            &:hover
+              color: $accent_hover
+          .bullet
+            display: inline-block
+            width: 25px
+            height: 25px
+            margin-right: 5px
+            border-radius: 25px
+            background: #092D43
+            color: #fff
+            text-align: center
+    .button
+      display: flex
+      align-items: flex-end
+      flex-direction: column
+      text-align: center
+      .primary-btn
+        max-width: 258px
+        height: 60px
+        margin-bottom: 18px
+        border: 0
+        box-shadow: none
+        font-weight: 500
+        font-size: 23px
+      .cta
+        display: flex
+        align-items: center
+        gap: 8px
+        color: #092D43
+        font-weight: 500
+        font-size: 14px
+        line-height: 1.2em
+        a
+          color: #3A81F4
+          &:hover
+            color: $accent_hover
+  @media (max-width: 1199px)
+    &__pricing
+      max-width: 190px
+    &__content
+      .button
+        width: 100%
+        max-width: 260px
+  @media (max-width: 991px)
+    flex-direction: column
+    max-width: 500px
+    margin-left: auto
+    margin-right: auto
+    &__pricing
+      max-width: 100%
+      padding: 20px
+      &--wrap
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 10px
+      .from
+        width: 60px
+        font-size: 17px
+        text-align: right
+      .offer-price
+        margin-bottom: 0
+        font-size: 50px
+      .unit-price
+        width: 80px
+        font-size: 17px
+        text-align: left
+    &__content
+      flex-direction: column
+      .info
+        h3
+          text-align: center
+      .button
+        align-items: center
+  @media (max-width: 767px)
+    margin-top: 0
+    margin-bottom: 0
+    &__content
+      padding: 20px 5px
+      .includes 
+        ul 
+          li
+            font-size: 17px
+            letter-spacing: -0.7px
+            .bullet
+              line-height: 1.5em
+            img
+              width: 116px
+
+// Site Form
+.site-form
+  padding: 40px 0
+  background: #aaa image-set(url(../img/form-section-bg.jpg) 1x, url(../img/form-section-bg@2x.jpg) 2x) 50% no-repeat
+  background-size: cover
+  @media (max-width: 767px)
+    padding: 0
+    background: #fff
+    .container
+      padding: 0
+
+.form-box
+  max-width: 905px
+  margin: 0 auto
+  padding: 8px
+  background-color: #fff
+  border-radius: 10px
+  &__inner
+    padding: 35px
+    border-radius: 5px
+    background-color: rgba(#AEF0F1, .41)
+  &__header
+    margin-bottom: 29px
+    text-align: center
+    h3
+      // max-width: 700px
+      margin: 0 auto 15px
+      color: #00407D
+      font-weight: 400
+      font-size: 38px
+      line-height: 1.1em
+      .decorated-text
+        margin-bottom: -2px
+        vertical-align: baseline
+    p
+      margin: 0
+      color: #0C1E55
+      font-weight: 500
+      font-size: 18px
+      line-height: 1.2em
+  form
+    margin: 0
+  fieldset
+    .row
+      gap: 12px
+      .col
+        padding: 0
+    .form-group
+      margin-bottom: 12px
+    .form-control
+      height: 46px
+      border: 1px solid #51CAD0
+      border-radius: 3px
+      color: #092D43
+      font-weight: 400
+      font-size: 18px
+  .form-footer
+    margin: 0 -9px
+    padding-top: 15px
+    .row
+      [class*='col-']
+        padding: 0 9px
+    .form-check
+      margin-bottom: 0
+    .form-check-label
+      max-width: 480px
+      color: #071330
+      font-weight: 400
+      font-size: 12px
+      line-height: 1.417em
+    .primary-btn
+      margin-bottom: 15px
+      font-size: 22px
+    .form-secure
+      display: flex
+      align-items: center
+      justify-content: center
+      gap: 6px
+      font-weight: 400
+      font-size: 14px
+      line-height: 1.2em
+  @media (max-width: 991px)
+    &__header
+      h3
+        // max-width: 400px
+        margin-left: auto
+        margin-right: auto
+        line-height: 1.2em
+    .form-footer
+      .row
+        flex-direction: column
+        .col-8, .col-4
+          width: 100%
+      .form-check
+        margin-bottom: 20px
+      .form-check-label
+        max-width: 100%
+      .primary-btn
+        display: block
+        max-width: 325px
+        margin-left: auto
+        margin-right: auto
+  @media (max-width: 767px)
+    &__header
+      margin: 0 -15px 25px
+      h3
+        max-width: 319px
+        margin-left: auto
+        margin-right: auto
+        font-size: 30px
+        .decorated-text
+          width: 125px
+    fieldset
+      .row-2
+        flex-direction: column
+        gap: 0
+
+.steps-indicator
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 100%
+  max-width: 377px
+  margin: 0 auto 30px
+  &:before
+    content: ''
+    position: absolute
+    top: 50%
+    left: 0%
+    transform: translateY(-50%)
+    width: 100%
+    height: 2px
+    background-color: #CCCCCC
+  .step
+    position: relative
+    z-index: 1
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 24px
+    height: 24px
+    border-radius: 24px
+    background-color: #CCCCCC
+    color: #fff
+    font-weight: 500
+    font-size: 17px
+    line-height: 1em
+    &.current, &.completed
+      background-color: $accent
+  @media (max-width: 767px)
+    max-width: 277px
+    margin-left: auto
+    margin-right: auto
+
+// STEPS HERO
+.steps-hero
+  position: relative
+  background: #022E4C
+  overflow: hidden
+  &__bg
+    position: absolute
+    z-index: 1
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    // display: none
+    background: 50% 0 no-repeat
+    background-size: cover
+    &.active
+      display: block
+    &.bg-1
+      background-image: image-set(url(../img/steps/hero-bg-1.jpg) 1x, url(../img/steps/hero-bg-1@2x.jpg) 2x)
+    &.bg-2
+      background-image: image-set(url(../img/steps/hero-bg-2.jpg) 1x, url(../img/steps/hero-bg-2@2x.jpg) 2x)
+    &.bg-3
+      background-image: image-set(url(../img/steps/hero-bg-3.jpg) 1x, url(../img/steps/hero-bg-3@2x.jpg) 2x)
+  &__inner
+    position: relative
+    z-index: 2
+    min-height: 1136px
+    padding: 20px 0 0
+  @media (max-width: 767px)
+    background: #fff
+    &__bg
+      display: none !important
+    &__inner
+      min-height: 0
+      padding: 0
+    .container
+      max-width: 100%
+      padding: 0
+
+// Steps Banner
+.steps-banner
+  margin: -25px auto 32px
+  &__inner
+    position: relative
+    z-index: 2
+  h1
+    margin: 0
+    img
+      margin: 0 auto
+  @media (max-width: 991px)
+    margin-top: -20px
+  @media (max-width: 767px)
+    position: relative
+    min-height: 210px
+    margin: 0
+    padding: 5px 5px 0
+    background: #022E4C
+    overflow: hidden
+    &__bg
+      position: absolute
+      z-index: 1
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      display: none
+      background: 50% 0 no-repeat
+      background-size: cover
+      &.bg-1
+        display: block
+        background-image: image-set(url(../img/steps/hero-bg-m-1.jpg) 1x, url(../img/steps/hero-bg-m-1@2x.jpg) 2x)
+      &.bg-2
+        background-image: image-set(url(../img/steps/hero-bg-m-2.jpg) 1x, url(../img/steps/hero-bg-m-2@2x.jpg) 2x)
+      &.bg-3
+        background-image: image-set(url(../img/steps/hero-bg-m-3.jpg) 1x, url(../img/steps/hero-bg-m-3@2x.jpg) 2x)
+    h1
+      img
+        max-width: 267px
+
+// Offer Box
+.steps-box
+  position: relative
+  width: 100%
+  max-width: 762px
+  margin: 0 auto
+  text-align: center
+  &__inner
+    border-radius: 10px
+    background-color: rgba(#fff, .89)
+    box-shadow: 0 5px 10px rgba(#000, .1)
+  &__topBar
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 11px
+    border-radius: 10px 10px 0 0
+    background-color: $color_a
+    padding: 11px
+    color: #092D43
+    .text-1
+      display: flex
+      align-items: center
+      justify-content: center
+      gap: 7px
+      font-weight: 500
+      font-style: italic
+      font-size: 18px
+      .arrow
+        width: 15px
+    .text-2
+      display: flex
+      align-items: center
+      justify-content: center
+      gap: 5px
+      font-weight: 400
+      font-size: 25px
+      small
+        font-size: 18px
+  &__body
+    padding: 25px 35px 30px
+    text-align: center
+  @media (max-width: 991px)
+    margin: 15px auto
+  @media (max-width: 767px)
+    width: 100%
+    max-width: 100%
+    margin: 0
+    padding: 0
+    border-radius: 0
+    &__topBar
+      flex-direction: column
+      gap: 7px
+      padding: 15px 5px
+      border-radius: 0
+      font-size: 16px
+      line-height: 1.2em
+      .text-1
+        font-size: 17px
+        .arrow
+          width: 12px
+    &__body
+      padding: 25px 15px
+
+// Customize Form
+.customize-form
+  margin: 0
+  &__titles
+    margin-bottom: 30px
+    padding-top: 10px
+    color: #092D43
+    h2
+      max-width: 480px
+      margin: 0 auto 15px
+      font-weight: 400
+      font-size: 42px
+      line-height: 1.1em
+    h3
+      margin: 0
+      font-weight: 400
+      font-size: 22px
+      line-height: 1.2em
+  &__footer
+    padding-top: 23px
+  .primary-btn
+    max-width: 240px
+    margin: 0 auto
+  .form-secure
+    img
+      margin: 0 auto
+  @media (max-width: 767px)
+    &__titles
+      padding-top: 0
+      h2
+        font-size: 35px
+      h3
+        font-size: 20px
+
+.step1-box
+  max-width: 405px
+  margin: 0 auto 30px
+  padding: 15px
+  border-radius: 5px
+  background: rgba(#AEF0F1, .41)
+  // @media (max-width: 767px)
+  //   margin-bottom: 20px
+
+.number-toogle-input
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 46px
+  margin-bottom: 10px
+  padding: 5px 10px 5px 15px
+  border-radius: 3px
+  border: 1px solid #51CAD0
+  background-color: #fff
+  &__label
+    color: #092D43
+    font-weight: 400
+    font-size: 18px
+    line-height: 1.1em
+  &__controls
+    display: flex
+    a
+      display: block
+      width: 32px
+      height: 32px
+      background-color: #ADF2F5
+      color: #082C42
+      font-weight: 700
+      font-size: 23px
+      line-height: 32px
+      text-decoration: none
+      &.btn-minus
+        border-radius: 32px 0 0 32px
+      &.btn-plus
+        border-radius: 0 32px 32px 0
+      &.disabled
+        background-color: #CCCCCC
+        color: #fff
+        cursor: default
+    input
+      display: block
+      width: 42px
+      height: 32px
+      border: 0
+      border-top: 1px solid #CCCCCC
+      border-bottom: 1px solid #CCCCCC
+      border-radius: 0 !important
+      color: #092D43
+      font-weight: 400
+      font-size: 18px
+      text-align: center
+  @media (max-width: 767px)
+    &__label
+      font-size: 17px
+
+.travel-months-select
+  .form-select
+    height: 46px
+    border-radius: 3px
+    border: 1px solid #51CAD0
+    color: #092D43
+    font-weight: 400
+    font-size: 18px
+  @media (max-width: 767px)
+    .form-select
+      font-size: 17px
+
+.custom-checkboxes
+  display: flex
+  flex-wrap: wrap
+  gap: 7px 20px
+  justify-content: center
+  max-width: 620px
+  margin: 0 auto
+  margin-bottom: 35px
+  .item
+    position: relative
+    input[type="checkbox"]
+      position: absolute
+      width: 0
+      height: 0
+      border: 0
+      opacity: 0
+    label
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 140px
+      height: 26px
+      border: 1.5px solid #BABABA
+      border-radius: 26px
+      background-color: #fff
+      color: #428AF6
+      font-weight: 500
+      font-size: 13px
+      letter-spacing: -0.4px
+      cursor: pointer
+      transition: border-color .2s, background-color .2s, color .2s
+      &.active
+        border-color: #E23A87
+        background-color: #E23A87
+        color: #fff
+  @media (min-width: 1200px)
+    .item
+      label
+        &:hover
+          border-color: #428AF6
+          background-color:#428AF6
+          color: #fff
+        &.active
+          &:hover
+            border-color: #E23A87
+            background-color: #E23A87
+  @media (max-width: 767px)
+    // margin-bottom: 20px
+    .item
+      label
+        height: 35px
+
+.other-cruises
+  margin-bottom: 55px
+  &__title
+    margin-bottom: 35px
+    font-weight: 500
+    font-size: 20px
+    line-height: 1.1em
+    text-transform: uppercase
+  &__logos
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 35px
+  @media (max-width: 767px)
+    margin-bottom: 40px
+    &__title
+      max-width: 310px
+      margin: 0 auto 25px
+      font-size: 16px
+    &__logos
+      flex-wrap: wrap
+      gap: 30px
+      &>div
+        width: calc(50% - 20px)
+        img
+          display: block
+          max-width: 100%
+          margin: 0 auto
+
+.footer-banner
+  margin-top: 10px
+  padding: 30px 0
+  background-color: $accent
+  color: #fff
+  text-align: center
+  h3
+    margin: 0
+    font-weight: 900
+    font-size: 37px
+    line-height: 1em
+    text-transform: uppercase
+  @media (max-width: 767px)
+    margin-top: 0
+    padding: 20px 0
+    h3
+      max-width: 350px
+      margin: 0 auto
+      font-size: 25px
+      line-height: 1.1em

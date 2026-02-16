@@ -1,0 +1,84 @@
+.ty-hero
+	min-height: 946px
+	background: #092D43 image-set(url(../img/ty/ty-bg.jpg) 1x, url(../img/ty/ty-bg@2x.jpg) 2x) 50% no-repeat
+	background-size: cover
+	text-align: center
+	&__titles
+		padding-top: 54px
+		padding-bottom: 47px
+		color: #fff
+		h1
+			margin: 0
+			font-family: $font_b
+			font-style: italic
+			font-weight: 400
+			font-size: 68px
+			line-height: 0.926em
+		.curved-line
+			margin: 0 auto
+	@media (max-width: 1199px)
+		&__titles
+			h1
+				font-size: 60px
+	@media (max-width: 991px)
+		&__titles
+			h1
+				font-size: 43px
+	@media (max-width: 767px)
+		min-height: 0
+		background: #fff
+		.container
+			max-width: 100%
+			margin: 0
+			padding: 0
+		&__titles
+			min-height: 268px
+			padding: 20px 15px
+			background: #092D43 image-set(url(../img/ty/ty-bg-m.jpg) 1x, url(../img/ty/ty-bg-m@2x.jpg) 2x) 50% no-repeat
+			background-size: cover
+
+
+.ty-box
+	max-width: 1050px
+	margin: 0 auto
+	padding: 5px
+	border-radius: 10px
+	background-color: #fff
+	color: #092d43
+	&__top
+		padding: 30px
+		p
+			margin: 0 auto 10px
+			font-weight: 400
+			font-size: 18px
+			line-height: 1.3em
+			&:last-child
+				margin-bottom: 0
+			a
+				color: #3a81f5
+				text-decoration: underline
+				&:hover
+					color: $accent_hover
+	&__bottom
+		padding: 34px
+		border-radius: 0 0 5px 5px
+		background-color: rgba(#aef0f1, .41)
+		p
+			margin: 0 auto 25px
+			font-weight: 400
+			font-size: 18px
+			line-height: 1.3em
+		.primary-btn
+			max-width: 350px
+	@media (max-width: 1199px)
+		max-width: 740px
+	@media (max-width: 767px)
+		padding: 0
+		&__top, &__bottom
+			padding: 25px 15px
+			border-radius: 0
+			p
+				margin: 0 auto 20px
+				font-size: 16px
+				&:last-child
+					margin-bottom: 0
